@@ -2,8 +2,8 @@
 
 # Pivotal Application Service Weighted Routing
 
-![](https://ezuce.com/media/uploads/beta-stamp.png)
-NOTE: This is a beta feature so may change a little by GA
+**NOTE**: This is a beta feature so may change a little by GA
+------------------------------------------------------------------
 
 | Target Audience          | Difficulty | Experience | Time Needed | Impact (wow factor) |
 | ------------------------ | ---------- | ---------- | ----------- | ------------------- |
@@ -29,7 +29,7 @@ After cloning the repo deploy the applications as defined in the `manifest.yml` 
 cf push
 ```
 
-You should now have a number of apps running and ready to work though the demo.
+You should now have a number of apps running and ready to work though the demo. The apps are pretty simple (just a coloured backgroud) and you should get a flash back to the 90's with my use of PHP :smiley:. Feel free to improve the app with a PR or your own version where needed.
 
 ### Simple Round Robin
 
@@ -45,7 +45,7 @@ Route demo.mesh.apps.gcp.pcf.space has been created.
 OK
 ```
 
-Now the route you want to use for you app is configured (in the my case [demo.mesh.apps.gcp.pcf.space](https://demo.mesh.apps.gcp.pcf.space) we now add the instances we want to the route (at the moment if you browse nothing will appear);
+Now the route you want to use for you app is configured (in the my case `demo.mesh.apps.gcp.pcf.space`) we now add the instances we want to the route (at the moment if you browse nothing will appear);
 
 ```
 cf map-route app-blue mesh.apps.gcp.pcf.space -n demo
