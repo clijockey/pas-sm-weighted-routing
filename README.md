@@ -91,12 +91,14 @@ You should now have 75% of traffic being directed at the `app-green` instances.
 ### Canary Deploy 
 Canary releases could be considered a special case of A/B testing, in which the rollout happens much more gradually. The analogy being alluded to by the name is the canary in the coal mine. A canary release begins with a “dark” deployment of the new service version, which receives no traffic. If the service is observed to start healthily it is directed a small percentage of traffic (e.g. 1%). Errors are continually monitored as continued health is rewarded with increased traffic, until the new service is receiving 100% of the traffic and the old instances can be shut down. Obviously, the ability to safely perform canary releases rests upon reliable and accurate application health checks.
 
+Run the `canary_weight.sh` script which has a a number of defaults for this demo.
+
 ```
-# show_weight.sh <host>
+# show-weight.sh <host>
 ./canary_weight.sh demo
 Route: demo.mesh.apps.gcp.pcf.space
 App: app-blue 	 Weight: 1
-App: app-green 	 Weight: 3
+App: app-green 	 Weight: 100
 ```
 The vast majority of traffic should now go to `app-blue` and a small amount to `app-green`.
 
@@ -105,6 +107,14 @@ NOTE: I have noticed a slight delay in the updates occuring.
 
 ### Show weights
 At the moment with the lack of CLI commands you need to chain a couple of API calls together (well its the way I workout out how to get the info), use the script `./show-weight.sh` to display.
+
+```
+# show-weight.sh <host>
+./canary_weight.sh demo
+Route: demo.mesh.apps.gcp.pcf.space
+App: app-blue 	 Weight: 1
+App: app-green 	 Weight: 3
+```
 
 ### Tidy Up
 ```
