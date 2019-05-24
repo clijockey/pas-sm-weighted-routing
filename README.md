@@ -1,5 +1,8 @@
+![](https://pngimage.net/wp-content/uploads/2018/05/beta-png-2.png)
+
 # Pivotal Application Service Weighted Routing
 
+![](https://ezuce.com/media/uploads/beta-stamp.png)
 NOTE: This is a beta feature so may change a little by GA
 
 | Target Audience          | Difficulty | Experience | Time Needed | Impact (wow factor) |
