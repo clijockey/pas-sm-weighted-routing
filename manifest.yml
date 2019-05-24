@@ -1,0 +1,10 @@
+applications:
+- name: app-blue
+  instances: 1
+  path: ./blue/
+- name: app-green
+  instances: 1
+  path: ./green/
+- name: app-pink
+  instances: 1
+  path: ./pink/
