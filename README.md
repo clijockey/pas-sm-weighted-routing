@@ -95,7 +95,7 @@ Run the `canary_weight.sh` script which has a a number of defaults for this demo
 
 ```
 # show-weight.sh <host>
-./canary_weight.sh demo
+./show-weight.sh demo
 Route: demo.mesh.apps.gcp.pcf.space
 App: app-blue 	 Weight: 1
 App: app-green 	 Weight: 100
@@ -110,7 +110,7 @@ At the moment with the lack of CLI commands you need to chain a couple of API ca
 
 ```
 # show-weight.sh <host>
-./canary_weight.sh demo
+./show-weight.sh demo
 Route: demo.mesh.apps.gcp.pcf.space
 App: app-blue 	 Weight: 1
 App: app-green 	 Weight: 3
